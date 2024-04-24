@@ -60,7 +60,7 @@ body{
 .content{
     margin-block: 30px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     justify-content: space-between;
     gap: 1.25rem;
 }
@@ -79,6 +79,7 @@ body{
 .item__image{
     overflow: hidden;
     height: 250px;
+    max-width: 90%;
     box-shadow: 5px 5px 3px #3f3f3f;
 }
 .item__image img{
@@ -98,4 +99,8 @@ body{
 }
 .item__body >*{
     text-align: center;
+}
+.error{
+    color: red;
+    align-self: flex-end;
 }
