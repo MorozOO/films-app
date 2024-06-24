@@ -26,6 +26,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-block: 20px;
 }
 .btn{
     background: var(--bg-button);
@@ -60,7 +61,7 @@ body{
 .content{
     margin-block: 30px;
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 1.25rem;
 }

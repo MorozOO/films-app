@@ -38,8 +38,7 @@ const FilmsAddingForm = ({ visibleForm, addFilm }) => {
   };
   const imageAudit = (image) => {
     if (image.trim().length === 0) {
-      setimageError("Image is required");
-      flag = false;
+      return 'https://www.kpi.kharkov.ua/ukr/wp-content/uploads/sites/2/2017/10/Film-300x200.jpg';
     } else {
       return image;
     }
@@ -64,7 +63,7 @@ const FilmsAddingForm = ({ visibleForm, addFilm }) => {
 
   return (
     <div className="adding__form">
-      <div className="adding__form-item">
+      <div className="adding__form-item" >
         <label htmlFor="name">Name</label>
         <input
           type="text"
@@ -104,7 +103,7 @@ const FilmsAddingForm = ({ visibleForm, addFilm }) => {
         />
       </div>
       {genreError && <div className="error">{imageError}</div>}
-      <button onClick={clickHandler} className="btn">
+      <button onClick={clickHandler} className="btn" >
         Add movie
       </button>
     </div>

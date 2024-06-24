@@ -29,6 +29,4 @@ const FilmsItem = (movie) => {
 };
 
 export default FilmsItem;
-/* <p>{movie.year}</p>
-<p>{movie.genre}</p>
-*/
+
